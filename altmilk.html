@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Other Milks</title>
+    <style>
+        /* Additional styling for altmilk content */
+        .altmilk {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .altmilk:hover {
+            transform: scale(1.05);
+        }
+
+        .altmilk img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recipe {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .ingredients {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ingredients li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exploring Different Milks</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="milkshake.html">Milkshakes</a></li>
+            <li><a href="altmilk.html">Other Milks</a></li>
+            <li><a href="icecream.html">Ice Creams</a></li>
+            <li><a href="custom.html">Customization</a></li>
+        </ul>
+    </nav>
+    <section id="altmilk-section">
+
+        <!-- Almond Milk -->
+        <article class="altmilk">
+            <h2>Almond Milk</h2>
+            <img src="almond-milk.jpg" alt="Almond Milk">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>1 cup of almonds</li>
+                <li>4 cups of water</li>
+                <li>Optional: sweetener to taste</li>
+            </ul>
+        </article>
+
+        <!-- Coconut Milk -->
+        <article class="altmilk">
+            <h2>Coconut Milk</h2>
+            <img src="coconut-milk.jpg" alt="Coconut Milk">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>2 cups of shredded coconut</li>
+                <li>4 cups of water</li>
+                <li>Optional: sweetener to taste</li>
+            </ul>
+        </article>
+
+        <!-- Oat Milk -->
+        <article class="altmilk">
+            <h2>Oat Milk</h2>
+            <img src="oat-milk.jpg" alt="Oat Milk">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>1 cup of rolled oats</li>
+                <li>4 cups of water</li>
+                <li>Optional: sweetener to taste</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        anime({
+            targets: 'h1',
+            translateY: [-20, 0],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    </script>
+</body>
+</html>

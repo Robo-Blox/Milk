@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ice Creams</title>
+    <style>
+        /* Additional styling for ice cream content */
+        .icecream {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icecream:hover {
+            transform: scale(1.05);
+        }
+
+        .icecream img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recipe {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .ingredients {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ingredients li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ice Creams Galore</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="milkshake.html">Milkshakes</a></li>
+            <li><a href="altmilk.html">Other Milks</a></li>
+            <li><a href="icecream.html">Ice Creams</a></li>
+            <li><a href="custom.html">Customization</a></li>
+        </ul>
+    </nav>
+
+    <section id="icecream-section">
+
+        <!-- Vanilla Ice Cream -->
+        <article class="icecream">
+            <h2>Classic Vanilla</h2>
+            <img src="vanilla-ice-cream.jpg" alt="Vanilla Ice Cream">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>2 cups of vanilla ice cream</li>
+                <li>Optional: chocolate syrup or sprinkles for topping</li>
+            </ul>
+        </article>
+
+        <!-- Strawberry Ice Cream -->
+        <article class="icecream">
+            <h2>Strawberry Sensation</h2>
+            <img src="strawberry-ice-cream.jpg" alt="Strawberry Ice Cream">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>2 cups of strawberry ice cream</li>
+                <li>Fresh strawberries for topping</li>
+            </ul>
+        </article>
+
+        <!-- Chocolate Ice Cream -->
+        <article class="icecream">
+            <h2>Chocolate Indulgence</h2>
+            <img src="chocolate-ice-cream.jpg" alt="Chocolate Ice Cream">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>2 cups of chocolate ice cream</li>
+                <li>Chocolate fudge and whipped cream for topping</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        anime({
+            targets: 'h1',
+            translateY: [-20, 0],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    </script>
+</body>
+</html>

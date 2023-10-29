@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Milky Way Delights</title>
+</head>
+<body>
+
+    <header>
+        <h1>Milky Way Delights</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="milkshake.html">Milkshakes</a></li>
+            <li><a href="altmilk.html">Other Milks</a></li>
+            <li><a href="icecream.html">Ice Creams</a></li>
+            <li><a href="custom.html">Customization</a></li>
+        </ul>
+    </nav>
+
+    <section id="home-section">
+        <h2>Welcome to the Milky Way!</h2>
+        <p>Discover a galaxy of delightful milkshakes, alternative milks, and more!</p>
+
+        <!-- Featured Chocolate Milkshake -->
+        <div class="featured-milkshake">
+            <h3>Featured Milkshake: Chocolate Bliss</h3>
+            <img src="chocolate-milkshake.jpg" alt="Featured Chocolate Milkshake">
+            <p class="recipe">Ingredients:</p>
+            <ul class="ingredients">
+                <li>2 cups of chocolate ice cream</li>
+                <li>1 cup of milk</li>
+                <li>2 tablespoons of chocolate syrup</li>
+                <li>Whipped cream and chocolate shavings for topping</li>
+            </ul>
+        </div>
+
+        <p>Ready to embark on a flavorful journey? Choose your cosmic delight!</p>
+        <button onclick="navigate('milkshake.html')">Milkshakes</button>
+        <button onclick="navigate('altmilk.html')">Other Milks</button>
+        <button onclick="navigate('icecream.html')">Ice Creams</button>
+        
+        <script>
+            function navigate(page) {
+                window.location.href = page;
+            }
+        </script>
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        anime({
+            targets: 'h1',
+            translateY: [-20, 0],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    </script>
+</body>
+</html>

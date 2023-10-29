@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Settings</title>
+    <style>
+        /* Additional styling for settings content */
+        .settings-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Settings</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="milkshake.html">Milkshakes</a></li>
+            <li><a href="altmilk.html">Other Milks</a></li>
+            <li><a href="icecream.html">Ice Creams</a></li>
+            <li><a href="custom.html">Customization</a></li>
+        </ul>
+    </nav>
+
+    <section class="settings-container">
+        <h2>Settings</h2>
+
+        <!-- Dark Mode Toggle -->
+        <div class="option">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <!-- Light Mode Toggle -->
+        <div class="option">
+            <span>Light Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="lightModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <!-- Customization Link -->
+        <div class="option">
+            <a href="custom.html">Customization</a>
+        </div>
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+ 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const lightModeToggle = document.getElementById('lightModeToggle');
+
+        darkModeToggle.addEventListener('change', function () {
+            document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+            lightModeToggle.checked = !darkModeToggle.checked;
+        });
+
+        lightModeToggle.addEventListener('change', function () {
+            document.body.classList.toggle('light-mode', lightModeToggle.checked);
+            darkModeToggle.checked = !lightModeToggle.checked;
+        });
+    });
+</script>
+
+</body>
+</html>
